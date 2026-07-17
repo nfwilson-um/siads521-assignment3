@@ -1,50 +1,26 @@
-# SIADS 521 — Assignment 3
+# My Key Findings
+## While exploring the dataset in my notebook, I uncovered a few fascinating orbital patterns:
 
-## High-level overview
+The Earth-Crossing Limit: There is a strict mathematical boundary where an asteroid's orbit shape and size allow it to cross Earth's path. If its orbit sits below this curve, it can physically never collide with us. I sort of knew of this during my physics degree but it was really cool to see it literally as a hard curve in the chart.
 
-This repository contains the materials for Assignment 3 in SIADS 521. The purpose of this assignment is two-fold:
+The 140-Meter Rule: NASA only flags an asteroid as potentially hazardous if its diameter is roughly 140 meters or larger. This is why smaller rocks are never labeled as threats on the charts.
 
-1. To engage you in independent learning about dashboard creation and interactive visualization methods.
-2. To enhance the class's collective knowledge through peer instruction by producing a worked demonstration others can learn from.
+The Detection Boom: Our tracking capabilities exploded in the late 1990s and early 2000s when modern automated sky surveys went live.
 
-You will create an interactive dashboard plus a narrated, tutorial-style Jupyter notebook that demonstrates multiple visualization techniques working together to tell a clear data-driven story.
+# The Interactive Dashboard
+## The dashboard features four key interactive visualizations:
 
-## Goals and expectations
+Orbit Profiles (Scatter Plot): Compares orbit size against orbit shape to show exactly where the hazardous asteroids sit compared to the safe ones.
 
-- Build a single-screen dashboard composed of multiple, coordinated visualizations (at least four different chart types) that interact with one another.
-- Write a concise, clear tutorial notebook that explains your choices, shows code and screenshots, and demonstrates how the pieces work together.
-- Produce a short narrated video (no longer than one minute) that showcases the dashboard's key interactions.
+Threat Levels by Size (Stacked Bar Chart): Groups asteroids by size to show that the vast majority of tracked objects are tiny and harmless.
 
-## Notebook structure (required sections)
+Diameter Distribution (Box Plot): Uses a log scale to compare physical sizes across the four major asteroid families. It highlights how observational bias makes it much harder for telescopes to spot smaller objects orbiting close to the sun.
 
-Your submitted notebook should be primarily narrative and include code cells that demonstrate the work. Include the following main sections:
+Cumulative Discoveries (Area Chart): A stacked area chart showing the exponential growth of our asteroid catalog over time.
 
-1. Visualization Technique (25%)
-   - Describe each visualization type used in the dashboard.
-   - Explain how the visualizations complement each other and when to use each.
-   - Discuss dashboard-specific considerations such as interactivity, brushing, linking, filtering, and layout.
+# File Structure
+index.html: The main page layout hosting the responsive dashboard grid.
 
-2. Visualization Library (25%)
-   - Explain which dashboard framework and visualization libraries you used and why.
-   - Include installation instructions and short notes on authorship/license (is it open source?).
-   - Important: Do NOT use Altair, Matplotlib or Seaborn for this assignment (these libraries are already covered elsewhere in the course).
-   - Describe the framework's approach (declarative vs procedural), Jupyter integration, and limitations.
+chart1.html to chart4.html: The standalone interactive Plotly charts.
 
-3. Demonstration (50%)
-   - Dataset selection and cleaning steps (describe the dataset and show how you prepared it).
-   - Build up the dashboard step-by-step: basic visualizations, then interactivity and advanced coordinated features.
-   - Show at least four graph types (for example: line chart, bar chart, scatter plot, heatmap, map, or table) that work together to tell a cohesive story.
-
-## Deliverables
-
-1. Final Dashboard
-   - Complete dashboard source code and all required assets and datasets.
-   - The dashboard must be publicly runnable with minimal or no installation. Recommended hosting options include Google Colab, Deepnote, Streamlit Community Cloud, Binder, or other free services — include a link to the running dashboard.
-
-2. Video Demonstration
-   - A narrated video (<= 1 minute) demonstrating the dashboard's interactions and explaining the main features. Include a link or the file in the repository.
-
-3. Notebook
-   - The narrative tutorial notebook described above, included in this repository.
-   - Include screenshots, code snippets, and notes about common errors or troubleshooting tips.
-   - Provide deploy/run instructions so a grader can reproduce your dashboard.
+Exploration.ipynb: My data cleaning and exploratory analysis pipeline. As well as how I generated the html charts to display in the index.html file and Github Page
