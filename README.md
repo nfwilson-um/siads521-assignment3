@@ -48,6 +48,3 @@ Your submitted notebook should be primarily narrative and include code cells tha
    - The narrative tutorial notebook described above, included in this repository.
    - Include screenshots, code snippets, and notes about common errors or troubleshooting tips.
    - Provide deploy/run instructions so a grader can reproduce your dashboard.
-
-
-If you'd like, I can add an example template notebook stub (with section headings and example cells) to this repository to help you get started. Would you like that now?
