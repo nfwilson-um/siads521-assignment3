@@ -49,29 +49,5 @@ Your submitted notebook should be primarily narrative and include code cells tha
    - Include screenshots, code snippets, and notes about common errors or troubleshooting tips.
    - Provide deploy/run instructions so a grader can reproduce your dashboard.
 
-## Grading notes and tips
-
-- Focus on clarity and pedagogy: write the notebook as a worked example others can follow and reuse.
-- Emphasize interactive features that let users explore the data and reveal insights (linked filters, selection brushing, cross-highlighting, dynamic queries, etc.).
-- Ensure your dashboard demonstrates at least four visualization types and that interactions affect multiple visualizations simultaneously.
-- Keep the dataset size reasonable so the dashboard runs smoothly when hosted.
-
-## Suggested frameworks (examples)
-
-You may choose any suitable framework except the prohibited libraries noted above. Common choices include (but are not limited to):
-- Plotly + Dash
-- Streamlit
-- Bokeh or Panel (HoloViz)
-- Altair is prohibited for this assignment
-
-When you pick a framework, explain why it is appropriate and list any limitations.
-
-## How to submit
-
-- Add your notebook, any dashboard source files, dataset(s), and the video (or video link) to this repository.
-- Include a short README section in the notebook with instructions for running the dashboard and where to find the running demo link.
-- Submit the required running-demo link and video link in Vocareum as part of your assignment submission.
-
----
 
 If you'd like, I can add an example template notebook stub (with section headings and example cells) to this repository to help you get started. Would you like that now?
